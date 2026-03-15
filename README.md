@@ -15,10 +15,12 @@ css/
   shared.css        Tokens, reset, layout primitives, reusable components
   index.css         Page-specific layout and section styles
 js/
-  site.js           Shared behavior: nav toggle, sticky offset sync
-  index.js          Page-specific: FAQ accordion, scroll animations
+  site.js           Shared behavior: nav toggle
+  index.js          Page-specific: FAQ accordion
 assets/
-  images/           Logo and media assets
+  logo.jpg          Hero logo
+  logo-crop.jpg     Nav logo
+  favicon.png       Site favicon
 ```
 
 ## Architecture Notes

@@ -2,15 +2,31 @@
    MOVE THE VOTE — index.css
    Page-specific layout and section styles.
    Tokens defined in shared.css.
+
+   TABLE OF CONTENTS
+   ─────────────────────────────────────────
+   1.  Hero
+   2.  Timeline
+   3.  Stats Bar
+   4.  What's Next
+   5.  Bill Card
+   6.  Take Action
+   7.  Action Cards
+   8.  Legislators
+   9.  Testimony Emails
+   10. Template Box
+   11. FAQ
+   12. Research Links
+   13. Responsive
    ============================================ */
 
 /* ─────────────────────────────────────────
    HERO
    ───────────────────────────────────────── */
 .hero {
-  padding: var(--sp-xl) var(--pad-x) var(--sp-2xl);
+  padding: var(--sp-md) var(--pad-x) var(--sp-2xl);
   text-align: center;
-  border-bottom: 1px solid var(--gray-light);
+  border-bottom: var(--border-default);
   position: relative;
   overflow: hidden;
 }
@@ -78,7 +94,7 @@
    ───────────────────────────────────────── */
 .timeline-section {
   background: var(--off-white);
-  border-bottom: 1px solid var(--gray-light);
+  border-bottom: var(--border-default);
   padding: var(--sp-md) var(--pad-x);
 }
 
@@ -293,14 +309,14 @@
   text-decoration-color: var(--green-dark);
 }
 
-.whats-next__cta {
+.whats-next__body .btn {
   margin-top: var(--sp-xs);
 }
 
 /* Bill Card */
 .bill-card {
   background: var(--white);
-  border: 1px solid var(--gray-light);
+  border: var(--border-default);
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-md);
@@ -348,7 +364,7 @@
 
 .bill-card__row-label {
   font-family: var(--font-heading);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -430,7 +446,7 @@
 
 .action-card {
   background: var(--white);
-  border: 1px solid var(--gray-light);
+  border: var(--border-default);
   border-radius: var(--radius-lg);
   padding: var(--sp-sm);
   position: relative;
@@ -568,7 +584,7 @@
   padding: 11px var(--sp-xs);
   background: var(--off-white);
   border-radius: var(--radius);
-  border: 1px solid var(--gray-light);
+  border: var(--border-default);
 }
 
 .testimony-email__address {
@@ -611,7 +627,7 @@
 
 .template-box__label {
   font-family: var(--font-heading);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -682,7 +698,7 @@
 }
 
 .faq__item {
-  border-bottom: 1px solid var(--gray-light);
+  border-bottom: var(--border-default);
 }
 
 .faq__question {
@@ -802,7 +818,7 @@
   flex-direction: column;
   padding: 10px 12px;
   background: var(--off-white);
-  border: 1px solid var(--gray-light);
+  border: var(--border-default);
   border-radius: var(--radius);
   text-decoration: none;
   transition: all var(--transition);
@@ -815,7 +831,7 @@
 
 .research-link__source {
   font-family: var(--font-heading);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -824,7 +840,7 @@
 }
 
 .research-link__title {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--ink);
   line-height: 1.4;
 }
@@ -832,23 +848,18 @@
 /* ─────────────────────────────────────────
    RESPONSIVE — PAGE-SPECIFIC
    ───────────────────────────────────────── */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .whats-next__grid {
     grid-template-columns: 1fr;
     gap: var(--sp-md);
   }
-}
-
-@media (max-width: 900px) {
   .take-action__cards {
     grid-template-columns: 1fr;
   }
   .research-grid {
     grid-template-columns: 1fr;
   }
-}
 
-@media (max-width: 768px) {
   .hero {
     padding: var(--sp-lg) var(--pad-x) var(--sp-xl);
   }
