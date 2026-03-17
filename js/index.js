@@ -30,14 +30,4 @@
       }
     });
   });
-
-  // Open first item in each FAQ group by default
-  document.querySelectorAll(".faq__group").forEach((group) => {
-    const first = group.querySelector(".faq__item");
-    const firstBtn = first && first.querySelector(".faq__question");
-    if (first && firstBtn) {
-      first.classList.add("is-open");
-      firstBtn.setAttribute("aria-expanded", "true");
-    }
-  });
 })();
