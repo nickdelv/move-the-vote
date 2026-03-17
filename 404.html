@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found — Move the Vote</title>
+    <meta name="robots" content="noindex" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6NRM6J7RGJ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-6NRM6J7RGJ");
+    </script>
+
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <link rel="stylesheet" href="css/shared.css?v=1.1" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      main {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .error-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 4rem 2rem;
+      }
+      .error-code {
+        font-size: 6rem;
+        font-weight: 900;
+        line-height: 1;
+        margin: 0 0 0.5rem;
+      }
+      .error-msg {
+        font-size: 1.25rem;
+        margin: 0 0 2rem;
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Main navigation">
+      <div class="site-nav__inner">
+        <a
+          href="/"
+          class="site-nav__brand"
+          aria-label="Move the Vote — Canton, MA"
+        >
+          <img
+            class="site-nav__logo"
+            src="assets/logo-crop.jpg"
+            alt="Move the Vote logo"
+            width="319"
+            height="259"
+          />
+          <div class="site-nav__wordmark">
+            Move the Vote
+            <span class="site-nav__wordmark-sub">Canton, Massachusetts</span>
+          </div>
+        </a>
+
+        <div class="site-nav__links" id="nav-links">
+          <a href="/#whats-next" class="site-nav__link">What's Next</a>
+          <a href="/#faq" class="site-nav__link">FAQ</a>
+          <a href="/#help" class="btn btn--primary">Take Action →</a>
+        </div>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Open navigation menu"
+        >
+          <svg
+            width="22"
+            height="18"
+            viewBox="0 0 22 18"
+            fill="none"
+            aria-hidden="true"
+          >
+            <rect y="0" width="22" height="2.5" rx="1.25" fill="currentColor" />
+            <rect y="8" width="22" height="2.5" rx="1.25" fill="currentColor" />
+            <rect
+              y="16"
+              width="16"
+              height="2.5"
+              rx="1.25"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <div class="error-body">
+        <p class="error-code">404</p>
+        <p class="error-msg">This page doesn't exist.</p>
+        <a href="/" class="btn btn--primary">Back to home →</a>
+      </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="site-footer__inner">
+        <div class="site-footer__copy">
+          <strong>Canton Residents to Move the Vote.</strong> All rights
+          reserved.<br />
+          A civic initiative to align Canton's local elections with November.
+        </div>
+        <nav class="site-footer__links" aria-label="Footer navigation">
+          <a href="/#whats-next">What's Next</a>
+          <a href="/#faq">FAQ</a>
+          <a href="/#help">Take Action</a>
+          <a
+            href="https://malegislature.gov/Bills/194/S2605"
+            target="_blank"
+            rel="noopener"
+            >S.2605 ↗</a
+          >
+        </nav>
+      </div>
+      <p class="site-footer__credit">Site by Nick Del Vecchio</p>
+    </footer>
+
+    <script src="js/site.js?v=1.1" defer></script>
+  </body>
+</html>
