@@ -1,15 +1,13 @@
-# OS
+# macOS
 .DS_Store
-Thumbs.db
 
-# Editors
+# Editor
 .vscode/
-.idea/
-*.suo
-*.swp
+*.code-workspace
 
-# Logs
-*.log
+# Python
+__pycache__/
+*.pyc
 
-# Dependencies (if a build step is ever added)
-node_modules/
+# Script
+compress-images.py
