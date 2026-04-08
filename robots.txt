@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://movethevote.info/sitemap.xml
+Sitemap: https://www.movethevote.info/sitemap.xml
