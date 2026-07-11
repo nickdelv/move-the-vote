@@ -260,41 +260,6 @@ h4 {
 }
 
 /* ─────────────────────────────────────────
-   ALERT STRIP
-   ───────────────────────────────────────── */
-.alert-strip {
-  background: var(--green-deeper);
-  color: var(--white);
-  text-align: center;
-  padding: 14px var(--pad-x);
-  font-family: var(--font-heading);
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  line-height: 1.4;
-}
-
-.alert-strip__inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--sp-sm);
-  flex-wrap: wrap;
-}
-
-.alert-strip a {
-  color: var(--green);
-  text-decoration: none;
-  font-weight: 700;
-  border-bottom: 1px solid rgba(var(--green-rgb), 0.4);
-  transition: border-color var(--transition);
-}
-
-.alert-strip a:hover {
-  border-color: var(--green);
-}
-
-/* ─────────────────────────────────────────
    SITE NAV
    ───────────────────────────────────────── */
 .site-nav {
