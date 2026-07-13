@@ -52,6 +52,7 @@
     <link rel="canonical" href="https://www.movethevote.info/" />
     <link rel="stylesheet" href="css/shared.css?v=1.3" />
     <link rel="stylesheet" href="css/index.css?v=1.3" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
   </head>
   <body>
     <!-- ════════════════════════════════════════
@@ -246,6 +247,50 @@
               Residents in Favor<br />vs. 1,540 Opposed
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════════
+     VOTER TURNOUT CHART
+════════════════════════════════════════ -->
+      <section class="section turnout-section" aria-labelledby="turnout-title">
+        <div class="turnout__header">
+          <p class="eyebrow">Canton Voter Turnout</p>
+          <h2 class="section-title" id="turnout-title">The Turnout Gap</h2>
+        </div>
+
+        <div class="turnout__chart-wrap">
+          <canvas
+            id="turnout-chart"
+            aria-label="Bar chart showing Canton voter turnout by election type from 2016 to 2026"
+            role="img"
+          ></canvas>
+        </div>
+
+        <p class="turnout__caption">
+          Voter turnout in Canton's stand-alone Town elections consistently lags
+          far behind Presidential and State election years.
+        </p>
+
+        <div class="turnout__legend">
+          <span class="turnout__legend-item">
+            <span
+              class="turnout__legend-swatch turnout__legend-swatch--pres"
+            ></span>
+            Presidential
+          </span>
+          <span class="turnout__legend-item">
+            <span
+              class="turnout__legend-swatch turnout__legend-swatch--state"
+            ></span>
+            State
+          </span>
+          <span class="turnout__legend-item">
+            <span
+              class="turnout__legend-swatch turnout__legend-swatch--town"
+            ></span>
+            Town
+          </span>
         </div>
       </section>
 
